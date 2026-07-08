@@ -7,4 +7,7 @@ etape 2.1: un depot local est le travail que l'on a fait sur notre machine alors
 etape 2.2: il ne faut jamais versionner le fichier .env car il contient les informations sensibles telque les mot de passe de la base de données , les clés d'api de payement..., ne pas versionner le dossier node_modules car il est lourd et peut etre reinstaller simplement, si ces element sont deja versionner le dossier node_modules sera tres lors lors du push , et apres un git log il aura des fichiers que nous n'avons pas ecrit s'afficher et nos données seront vulnerables car notre fichier .env est exposé.
 
 etape 3.1: on ne travaille pas directement sur la branche main pour eviter de casser le code deja fonctionnelle et tester, une branche par rapport au depot principale constitue une realité parralele ie que losque on cree une nouvelle branche une nouvelle ligne est crée differente de la main et on pourra continuer l'ajout des different elements sans pour autant actuellement toucher la main car elle restera figé
-etape 3.2: 
+etape 3.2: apres le push un ongets apparait sur github avec l'option compare et pull request, la branche principal main reste inchangé
+
+etape 4.1: le pull request permet de mieux verifier son code avant de le mettre en production afin de limitter les risques d'erreur, dans une equipe le PR doit etre valider par autres developpeurs plus competents.. pour qu'il peuvent verifier la visibilité, la maintenabilité...
+etape 4.2:le git pull est necessaire pour pouvoir recuperer les modifications qui ont eu lieu sur github apres le pull request ...
